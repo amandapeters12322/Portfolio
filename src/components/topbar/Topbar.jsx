@@ -1,7 +1,7 @@
 import "./topbar.scss"
 import { BsFillPersonFill } from "react-icons/bs";
 import { BsFillEnvelopeFill } from "react-icons/bs";
-import AdbIcon from '@mui/icons-material/Adb';
+// import AdbIcon from '@mui/icons-material/Adb';
 
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
@@ -24,7 +24,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                 {/* <h1>Hello</h1> THIS IS A CENTER TITLE IF NEEDED */}
                 <div className="right">
                 <div className="itemContainer">
-                        <AdbIcon/>
+                        {/* <AdbIcon/> */}
                         <BsFillPersonFill className="icon"/>
                         {/* <span>715.450.4230</span> */}
                         </div>
