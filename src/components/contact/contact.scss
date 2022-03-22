@@ -1,0 +1,126 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: white;
+  display: flex;
+
+//   @include mobile {
+//     flex-direction: column;
+//   }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      height: 115%;
+      width: 100%;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .paint-smear{
+      position: absolute;
+      margin-top: -700px;
+      margin-right: -200px;
+      overflow: hidden;
+
+        img{
+          width: 650px;
+        }
+    }
+
+    h2 {
+      font-size: 105px;
+      overflow: none;
+      z-index: 1;
+      margin-right: -350px;
+      margin-bottom: 0px;
+      margin-top: -70px;
+      text-shadow: 3px 2px 5px rgb(83, 82, 82);
+      overflow: hidden;
+    }
+    h3 {
+      font-size: 30px;
+      font-weight: normal;
+      color: rgb(146, 144, 144);
+      font-family: 'Lora', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 90px;
+      margin-bottom: -120px;
+      overflow: hidden;
+    }
+
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 60px;
+      
+
+      input {
+        width: 350px;
+        height: 40px;
+        font-size: 20px;
+          
+        // @include mobile {
+        //   width: 200px;
+        //   height: 20px;
+        // }
+      }
+      input:focus{
+        outline: none;      /* Remove default outline and use border or box-shadow */
+      }
+
+      textarea{
+        width: 550px;
+        height: 300px;
+        font-size: 20px;
+        margin-top: -130px;
+
+        // @include mobile {
+        //   width: 200px;
+        //   height: 100px;
+        // }
+      }
+      textarea:focus{
+        outline: none; 
+        
+      }
+      button {
+        width: 190px;
+        height: 40px;
+        color: white;
+        background-color: rgb(247, 131, 137);
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: -120px;
+        transition: all .2s ease-in;
+
+        &:focus {
+          outline: none;
+        }
+        &:hover{
+          background-color: rgb(245, 173, 176);
+      }
+      }
+
+      span {
+        color: coral;
+        margin-top: -90px;
+      }
+    }
+  }
+}

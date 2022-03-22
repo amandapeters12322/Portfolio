@@ -1,0 +1,41 @@
+@import "../../global.scss";
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .videoPlayer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 70%;
+       position: absolute;
+       margin-left: 200px;
+       margin-top: 200px;  
+    }
+
+    .buttontest{
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .video-button{
+            width: 200px;
+            border-radius: 10px;
+            height: 40px;
+            border: none;
+            color: white;
+            background-color: rgb(247, 131, 137);
+            transition: all .2s ease-in;
+            margin-top: 25px;
+            
+            &:hover{
+                background-color: rgb(245, 173, 176);
+           }
+        }
+
+    }
+}

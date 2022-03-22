@@ -1,0 +1,201 @@
+@import "../../global.scss";
+
+.intro{
+    background-color: white;
+    display: flex;
+
+    .left{
+        flex: 0.5;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2F3F5;
+        overflow: hidden;
+        
+
+        img{
+            height: 90%;
+            width: 95%;
+           margin-top: 90px;
+          z-index: 1;
+           position: relative;
+        }
+
+        .introBlock{
+            width: 100%;
+            height: 30%;
+            background-color: #e5e6e7;
+            position: absolute;
+            margin-bottom: -750px;
+        }
+
+        // .imgContainer{
+        //     width: 100%;
+        //     height: 70%;
+        //     margin-top: 60px;
+        //     background-color: white;
+        //     // border-radius: 50%; //makes the border rounded
+        //     display: flex;
+        //     align-items: flex-end;
+        //     justify-content: center;
+        //     float:right; //hugs the image to the right side of screen
+        //     // border: 3px dotted $mainColor;
+
+        //     img{
+        //         height: 95%;
+        //     }
+        // }
+    }
+
+    .right{
+        flex: 0.5;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+
+        .wallpaper {
+            width: 100%;
+            height: 145%;
+            position: absolute;
+            margin-top: -130px;;
+            
+        }
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            // margin-top: -90px; //keeps the words towards to the top in the h1, h2, h3
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            
+
+            // .cat{
+            //     position: relative;
+            //     width: 350px;
+            //     max-width:100%;
+            //     height: auto;
+            //     cursor:pointer;
+            //     margin-bottom: -400px;
+            //     align-items: center;
+            //     justify-content: center;
+            //     display: flex;
+            //     margin-left: 200px;
+            //     padding-bottom: 5px;
+                
+            //     img{
+            //         width: 400px;
+            //     }
+                
+            //     img.cat-sleep{
+            //         width: 350px;
+            //         bottom: 0;
+            //         align-items: center;
+            //         justify-content: center;
+            //         bottom: 0;
+            //         object-fit: contain;
+            //         z-index: 2;
+                    
+            //     }
+            //     img.cat-awake{
+            //         position: absolute;
+            //         bottom: 0;
+            //         object-fit: contain;
+            //         opacity: 0;
+            //         transition: opacity .2s;
+            //         width: 350px;
+            //         align-items: center;
+            //         justify-content: center;
+            //         padding-bottom: 5px;
+            //         z-index: 2;
+            //     }
+            //     &:hover img.cat-awake{
+            //         opacity: 1;
+            //     }
+            }  
+
+
+            .titleText{
+                z-index: 1;
+                margin-top: -380px;
+                padding-left: 10px;
+                
+
+                h1{
+                    font-size: 75px;
+                    font-family: 'Lora', serif;
+                    font-weight: 500;
+                    overflow: hidden;
+                    // margin: 10px 0;
+                }
+                h2{
+                    font-size: 45px;
+                    font-weight: 500;
+                    color: rgb(85, 84, 84);
+                    height: 60px;
+                }
+                h3{
+                    font-size: 30px;
+                    height: 50px;
+                    height: 60px;
+                    margin-top: 20px;
+
+                    span{
+                        font-size: inherit;
+                        color: #808d99;
+                    }
+
+                    .ityped-cursor{
+                        animation: blink 1s infinite;
+                    }
+
+                    @keyframes blink {
+                        50%{
+                            opacity: 1;
+                        }
+                        100%{
+                            opacity: 0;
+                        }
+                    }
+                }
+        // }
+            
+        }
+
+        // .catBed{
+        //     display: flex;
+        //    position: absolute;
+        //    z-index: 1;
+        //    margin-top: -115px;
+        //    margin-left: 170px;
+            
+        // }
+    
+    }
+}
+
+
+
+
+// FOR THE BLINKING ARROWS 
+ // a{ 
+        //     position: absolute;
+        //     bottom: 30px;
+        //     left: 25%;
+
+        //     img{
+        //         width: 80px;
+        //         animation: arrowBlink 2.5s infinite;
+        //         background-color: transparent;
+        //     }
+
+        //     @keyframes arrowBlink {
+        //         100%{
+        //             opacity: 0;
+        //         }
+        //     }
+        // }
+

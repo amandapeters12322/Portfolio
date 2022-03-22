@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        //background-color: lightpink;
+        position: relative;
+        top: 70px; /*Start after 70px*/
+        scroll-behavior: smooth; //makes the scroll after a click glide versus instant
+        scroll-snap-type: y mandatory; /*when user scrolls, its keeps the scroll to auto land on a div container section*/
+        scrollbar-width: none; //for firefox
+        &::-webkit-scrollbar{ //for other browsers
+            display:none;
+        }
+
+
+        > *{ /*FOR EACH COMPONENT INSIDE THE SECTIONS (i.e. works, testimonials, etc */
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start; /*begin the snap scrolling*/
+        }
+    }
+    
+}
